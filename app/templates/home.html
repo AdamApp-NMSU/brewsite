@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block main %}
+<p>Welcome to Adam Applegarth's brewsite page</p>
+<p>{{ user }}</p>
+<img src="{{ url_for('static', filename = 'images/image1.webp') }}" alt="Tall glass of beer">
+<img src="{{ url_for('static', filename = 'images/image2.webp') }}" alt="Wide glass of beer">
+<img src="{{ url_for('static', filename = 'images/image3.jpg') }}" alt="Big glass of beer">
+{% endblock main %}
+
