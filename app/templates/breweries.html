@@ -4,7 +4,7 @@
 <p>Here are our favorite breweries</p>
 <style>
 .td_bgcolor td {
-    background-color: #588cc0
+    background-color: #0c654c
 }
 
 </style>
@@ -22,7 +22,7 @@
     </thead>
     <tbody>
         {% for b in content %}
-        <tr {% if loop.index0 //4 %2 == 1 %}class="td_bgcolor" {% endif %}>
+        <tr {% if loop.index0 %2 == 1 %}class="td_bgcolor" {% endif %}>
             <td>{{ b.get("name") }}</td>
             <td>{{ b.get("brewery_type") }}</td>  
             <td>{{ b.get("country") }}</td> 
